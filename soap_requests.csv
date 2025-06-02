@@ -1,0 +1,67 @@
+RequestName,SampleRequest
+GetCabinetVersion,"<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:get='http://webservices.tedata.net/GetCabinetVersion' xmlns:ted='http://webservices.tedata.net/V3/TEDATACommonTypes'>
+   <soapenv:Header xmlns:wsa='http://www.w3.org/2005/08/addressing'>
+      <wsse:Security soapenv:mustUnderstand='1' xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+         <wsse:UsernameToken>
+            <wsse:Username>BI02</wsse:Username>
+            <wsse:Password>Account@0011</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <get:GetCabinetVersionRequest>
+         <MessageHeader>
+            <ted:transactionID>87</ted:transactionID>
+         </MessageHeader>
+         <MessageBody>
+            <MSANIP>10.238.166.33</MSANIP>
+            <MSANVendorId>1</MSANVendorId>
+            <mode>0</mode>
+         </MessageBody>
+      </get:GetCabinetVersionRequest>
+   </soapenv:Body>"
+GetContactCallStatus,"<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:get='http://webservices.tedata.net/GetContactCallStatus' xmlns:ted='http://webservices.tedata.net/V3/TEDATACommonTypes'>
+   <soapenv:Header xmlns:wsa='http://www.w3.org/2005/08/addressing'>
+      <wsse:Security soapenv:mustUnderstand='1' xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+         <wsse:UsernameToken>
+            <wsse:Username>Remedy</wsse:Username>
+            <wsse:Password>pk@269sunmoon#funday</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <get:GetContactCallStatusRequest>
+         <MessageHeader>
+         </MessageHeader>
+         <MessageBody>
+            <U>IVR</U>
+            <P>P@ssw0rdIVR</P>
+            <ReferenceId>9</ReferenceId>
+         </MessageBody>
+      </get:GetContactCallStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>"
+GetOperStatusData,"<soapenv:Envelope xmlns:get='http://webservices.tedata.net/GetOperStatus' xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ted='http://webservices.tedata.net/V4/TEDATACommonTypes'>
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand='1' xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+         <wsse:UsernameToken wsu:Id='UsernameToken-1BE28318159D2BEFE8169253608581743'>
+            <wsse:Username>Remedy</wsse:Username>
+            <wsse:Password Type='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText'>pk@269sunmoon#funday</wsse:Password>
+            <wsse:Nonce EncodingType='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary'>GBcXR7+CgzBo4mv1lFSp3Q==</wsse:Nonce>
+            <wsu:Created>2023-08-20T12:54:45.817Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <get:GetOperStatusRequest>
+         <get:MessageHeader>
+            <ted:transactionID>1001</ted:transactionID>
+         </get:MessageHeader>
+         <get:MessageBody>
+            <get:MSANIP>10.231.0.6</get:MSANIP>
+            <get:MSANPortNo>0</get:MSANPortNo>
+           <get:MSANVendorId>1</get:MSANVendorId>
+         </get:MessageBody>
+      </get:GetOperStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>"
